@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./assets/vendor/aos/aos.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <title>Welcome to My Page</title>
+
+</head>
+
+<body>
+
+    <!-- Splash -->
+    <div class="splash"></div>
+
+    <!-- Sidebar -->
+    <div class="sidebar-center z-top text-display " id="d-text-display-none">
+        <ul class="list-unstyled text-left m-3">
+            <a href="#home" class="text-decoration-none">
+                <li class="sidebar-content rounded-pill my-2">
+                    <span class="bg-sidebar active rounded-circle far fa-compass py-3 px-3 fs-5"></span>
+                    <span class="sidebar-description ps-0 pe-3"> Home</span>
+                </li>
+            </a>
+            <a href="#about" id="sidebarabout" class="text-decoration-none">
+                <li class="sidebar-content rounded-pill my-2">
+                    <span class="bg-sidebar rounded-circle far fa-user py-3 px-3 fs-5"></span>
+                    <span class="sidebar-description ps-0 pe-3"> About</span>
+                </li>
+            </a>
+            <a href="#portfolio" id="sidebarportfolio" class="text-decoration-none">
+                <li class="sidebar-content rounded-pill my-2">
+                    <span class="bg-sidebar rounded-circle far fa-folder-open py-3 px-3 fs-5"></span>
+                    <span class="sidebar-description ps-0 pe-3"> Portfolio</span>
+                </li>
+            </a>
+            <a href="#testimonial" id="sidebartestimonial" class="text-decoration-none">
+                <li class="sidebar-content rounded-pill my-2">
+                    <span class="bg-sidebar rounded-circle far fa-heart py-3 px-3 fs-5"></span>
+                    <span class="sidebar-description ps-0 pe-3"> Testimonial</span>
+                </li>
+            </a>
+            <a href="#blogs" id="sidebarblogs" class="text-decoration-none">
+                <li class="sidebar-content rounded-pill my-2">
+                    <span class="bg-sidebar rounded-circle far fa-newspaper py-3 px-3 fs-5"></span>
+                    <span class="sidebar-description ps-0 pe-3"> Blog</span>
+                </li>
+            </a>
+            <a href="#contact" id="sidebarcontact" class="text-decoration-none">
+                <li class="sidebar-content rounded-pill my-2">
+                    <span class="bg-sidebar rounded-circle far fa-envelope py-3 px-3 fs-5"></span>
+                    <span class="sidebar-description ps-0 pe-3"> Contact</span>
+                </li>
+            </a>
+        </ul>
+    </div>
+
+    <!-- Hamburger menu-->
+    <div class="position-fixed w-100 text-display z-top mt-3 d-block d-sm-block d-md-none d-lg-none" style="text-align-last: right;">
+        <a href="javascript:void(0);" onclick="toggle_visibility();" class="navbar-brand"><span class="fas fa-bars fs-1 text-secondary" id="hamburger-nav"></span></a>
+    </div>
+
+    <!-- Hero Container -->
+    <section id="home">
+        <div class="hero-container">
+            <!--Hero Background -->
+            <div class="bg-reveal"></div>
+
+            <!--Hero Content -->
+            <div class="h-100vh position-absolute w-100 top-0">
+                <div class="container style-hero position-absolute text-display vertical-center">
+                    <h1 class="text-hero name-hero">Hello, </h1>
+                    <h3 class="text-hero ms-1">I'm a <span class="txt-type" data-wait="2000" data-words='["Developer", "Designer", "Planner"]'></span></h3>
+                    <ul class="list-inline mt-4 fs-3 ms-1">
+                        <li class="list-inline-item"><a href="#" class="text-hero "><span class="fab fa-github"></span></li></a>
+                            <li class="list-inline-item"><a href="#" class="text-hero "><span class="fab fa-whatsapp"></span></li></a>
+                                <li class="list-inline-item"><a href="#" class="text-hero "><span class="fab fa-telegram"></span></li></a>
+                                    <li class="list-inline-item"><a href="#" class="text-hero "><span class="fab fa-instagram"></span></li></a>
+                                        <li class="list-inline-item"><a href="#" class="text-hero "><span class="fab fa-facebook"></span></li></a>
+                                            <li class="list-inline-item"><a href="#" class="text-hero "><span class="fab fa-google"></span></li></a>
+                                                <li class="list-inline-item"><a href="#" class="text-hero "><span class="fab fa-paypal"></span></li></a>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Hero Borderline -->
+            <div class="wave-animation">
+                <div class="wave wave1"></div>
+                <div class="wave wave2"></div>
+                <div class="wave wave3"></div>
+                <div class="wave wave4"></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container mt-5">
+        <!-- About -->
+        <section id="about" class="pb-5 mb-5">
+            <div class="about-us">
+                <div class="row" data-aos="fade-up">
+                    <div class="col-xs-12 cl-sm-12 col-md-6 col-lg-5">
+                        <div class="rounded-1">
+                            <img src="./assets/img/2.jpeg" alt="" class="w-100 rounded-3 shadow-sm">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-7 mt-3 px-3">
+                        <span class="init-background d-none d-lg-block">ABOUT</span>
+                        <h2 class="">NAUFAL RAFIF DANUTIRTA</h2>
+                        <h6 class="">Creative Web & App Developer</h6>
+                        <hr>
+                        <div class="text justify-center">
+                            <p>My name is Naufal Rafif Danutirta. I am a Web Developer, and I'm very passionate and dedicated to my work.</p>
+                            <p>With 3 years experience as a Web developer, I have acquired the skills and knowledge necessary to make your project success. I enjoy every step of the design process, from discussion and collaboration.</p>
+                        </div>
+                        <div class="d-sm-center d-none">
+                            <a href="" class="btn btn-dark rounded-pill px-5 py-3 mt-3 btn-dark-hover">Download CV</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5 mb-5 justify-content-center d-none" id="skills">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div class="card-skill border-0 p-2">
+                            <div class="skill-container text-center m-3">
+                                <span class="fas fa-pencil-ruler text-info mb-3 fs-skill p-3 rounded-circle"></span>
+                                <div class="skill-name">
+                                    <h4>UI Design</h4>
+                                    <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, ipsam.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div class="card-skill border-0 p-2">
+                            <div class="skill-container text-center m-3">
+                                <span class="fas fa-globe-asia text-danger mb-3 fs-skill p-3 rounded-circle"></span>
+                                <div class="skill-name">
+                                    <h4>Web Development</h4>
+                                    <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, ipsam.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div class="card-skill border-0 p-2">
+                            <div class="skill-container text-center m-3">
+                                <span class="far fa-hdd text-warning mb-3 fs-skill p-3 rounded-circle"></span>
+                                <div class="skill-name">
+                                    <h4>Web Hosting</h4>
+                                    <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, ipsam.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio -->
+        <section id="portfolio" class="mt-5 pt-5">
+            <div class="portfolio mb-5" data-aos="fade-up">
+                <span class="init-background d-none d-lg-block">PORTFOLIO</span>
+                <div class="section-title">
+                    <h1 class="mb-5">FEATURED WORK</h1>
+                </div>
+                <div class="row">
+                    <div class="gallery">
+                        <div class="container">
+                            <div class="row">
+                                <div class="gallery-filter">
+                                    <span class="filter-item active" data-filter="all">all</span>
+                                    <span class="filter-item" data-filter="website">Website</span>
+                                    <span class="filter-item" data-filter="ui_ux">UI/UX</span>
+                                    <span class="filter-item" data-filter="mini_project">Mini Project</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <!-- gallery item start -->
+                                <div class="gallery-item mini_project">
+                                    <a href="mini_project/login_register/index.html" target="_blank" class="text-decoration-none">
+                                        <div class="gallery-item-inner img-content position-relative">
+                                            <span class="position-absolute vertical-center fas fs-1 text-dark bg-white p-3 fa-search"></span>
+                                            <img src="./assets/img/mini_project/login_register.png" alt="mini_project">
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- gallery item end -->
+                                <!-- gallery item start -->
+                                <div class="gallery-item mini_project">
+                                    <a href="mini_project/travelpage/index.html" target="_blank" class="text-decoration-none">
+                                        <div class="gallery-item-inner img-content position-relative">
+                                            <span class="position-absolute vertical-center fas fs-1 text-dark bg-white p-3 fa-search"></span>
+                                            <img src="./assets/img/mini_project/travel_page.png" alt="mini_project">
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- gallery item end -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col text-center mb-5 d-none">
+                        <a href="" class="btn btn-dark rounded-pill px-3 py-2 btn-dark-hover">View All Works</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section id="testimonial">
+            <div class="testimonial" data-aos="fade-up">
+                <span class="init-background d-none d-xl-block ">TESTIMONIAL</span>
+                <div class="section-title">
+                    <h1 class="mb-5">WHAT CLIENTS SAY</h1>
+                </div>
+                <div class="row">
+                    <div class="splide">
+                        <div class="splide__slider">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide row justify-content-center">
+                                        <div class="img-slider img-content col-12 col-sm-12 col-md-3 col-lg-3 p-4">
+                                            <img src="./assets/img/upload/camera-1.jpg" alt="" class="img-inner">
+                                        </div>
+                                        <div class="img-content col-12 col-sm-12 col-md-3 col-lg-8 p-4">
+                                            <span class="fas fa-quote-right"></span>
+                                            <h5 class="testimonials-user justify-center fw-light fst-italics px-2 mb-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas consequuntur veniam facere molestiae labore voluptatum adipisci pariatur maxime nesciunt alias? <span class="fst-normal fw-normal text-seccondary"><b>Narendra Ganes</b> - jadibisa.com</span></h5>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide row justify-content-center">
+                                        <div class="img-slider img-content col-12 col-sm-12 col-md-3 col-lg-3 p-4">
+                                            <img src="./assets/img/upload/camera-2.jpg" alt="" class="img-inner">
+                                        </div>
+                                        <div class="img-content col-12 col-sm-12 col-md-3 col-lg-8 p-4">
+                                            <span class="fas fa-quote-right"></span>
+                                            <h5 class="testimonials-user justify-center fw-light fst-italics px-2 mb-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas consequuntur veniam facere molestiae labore voluptatum adipisci pariatur maxime nesciunt alias? <span class="fst-normal fw-normal text-seccondary"><b>Narendra Ganes</b> - kamubisa.com</span></h5>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide row justify-content-center">
+                                        <div class="img-slider img-content col-12 col-sm-12 col-md-3 col-lg-3 p-4">
+                                            <img src="./assets/img/upload/headphone-3.jpg" alt="" class="img-inner">
+                                        </div>
+                                        <div class="img-content col-12 col-sm-12 col-md-3 col-lg-8 p-4">
+                                            <span class="fas fa-quote-right"></span>
+                                            <h5 class="testimonials-user justify-center fw-light fst-italics px-2 mb-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas consequuntur veniam facere molestiae labore voluptatum adipisci pariatur maxime nesciunt alias? <span class="fst-normal fw-normal text-seccondary"><b>Narendra Ganes</b> - yakin.com</span></h5>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blogs -->
+        <section id="blogs">
+            <div class="blogs" data-aos="fade-up" style="margin-top: 20vh;">
+                <span class="init-background d-none d-lg-block">BLOGS</span>
+                <div class="section-title">
+                    <h1 class="mb-5">LATEST BLOG</h1>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3">
+                        <div class="card border-0 shadow-sm rounded-3 mt-4">
+                            <a href="" class="text-decoration-none text-dark m-2">
+                                <div class="img-content">
+                                    <img src="./assets/img/upload/camera-2.jpg" alt="" class="rounded-3">
+                                </div>
+                                <p class="content-title mt-3 mb-0 p-1">Cara Membuat Akun Github </p>
+                                <p class="content-text p-1"><small>Caranya Mudah Sekali</small></p>
+                                <p class="p-1 read-more"><span class="dash-on-hover fas fa-minus"> </span> Read More</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3">
+                        <div class="card border-0 shadow-sm rounded-3 mt-4">
+                            <a href="" class="text-decoration-none text-dark m-2">
+                                <div class="img-content">
+                                    <img src="./assets/img/upload/headphone-1.jpg" alt="" class="rounded-3 ">
+                                </div>
+                                <p class="content-title mt-3 p-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, iure.</p>
+                                <p class="p-1 read-more"><span class="dash-on-hover fas fa-minus"> </span> Read More</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3">
+                        <div class="card border-0 shadow-sm rounded-3 mt-4">
+                            <a href="" class="text-decoration-none text-dark m-2">
+                                <div class="img-content">
+                                    <img src="./assets/img/upload/headphone-2.jpg" alt="" class="rounded-3 ">
+                                </div>
+                                <p class="content-title mt-3 p-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, iure.</p>
+                                <p class="p-1 read-more"><span class="dash-on-hover fas fa-minus"> </span> Read More</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3">
+                        <div class="card border-0 shadow-sm rounded-3 mt-4">
+                            <a href="" class="text-decoration-none text-dark m-2">
+                                <div class="img-content">
+                                    <img src="./assets/img/upload/headphone-3.jpg" alt="" class="rounded-3 ">
+                                </div>
+                                <p class="content-title mt-3 p-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, iure.</p>
+                                <p class="p-1 read-more"><span class="dash-on-hover fas fa-minus"> </span> Read More</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col text-center mt-3 mb-5">
+                    <a href="" class="btn btn-dark rounded-pill px-3 py-2 btn-dark-hover">View All Works</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <div class="contact" data-aos="fade-up" style="margin-top: 20vh;">
+                <span class="init-background d-none d-lg-block">CONTACT</span>
+                <div class="section-title">
+                    <h1 class="mb-5">GET IN TOUCH</h1>
+                </div>
+                <div class="row justify-content-center ">
+                    <div class="col-12 col-sm-4 col-md-4 col-lg-4 p-3">
+                        <div class="row mb-3">
+                            <div class="col-3 text-end align-self-center"><span class="fas fa-street-view fs-5 text-icon bg-icon p-3 rounded-circle"></span></div>
+                            <div class="col-9">
+                                <p class="contact-title mb-0 fs-5 fw-bold">Location : </p>
+                                <p class="contact-description">Kalasan, Sleman, Daerah Istimewa Yogyakarta</p>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-3 text-end align-self-center"><span class="fas fa-envelope fs-5 text-icon bg-icon p-3 rounded-circle"></span></div>
+                            <div class="col-9">
+                                <p class="contact-title mb-0 fs-5 fw-bold">Email : </p>
+                                <p class="contact-description">naufalrafif301199@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3 text-end align-self-center"><span class="fas fa-phone fs-5 text-icon bg-icon p-3 rounded-circle"></span></div>
+                            <div class="col-9">
+                                <p class="contact-title mb-0 fs-5 fw-bold">Phone : </p>
+                                <p class="contact-description">085700285472</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-8 col-md-8 col-lg-8 p-3">
+                        <div class="row">
+                            <div class="mb-3 col-6">
+                                <label for="exampleFormControlInput1" class="form-label">First Name</label>
+                                <input type="text" class="form-control shadow-none" id="chatFirstname" placeholder="Your first name">
+                            </div>
+                            <div class="mb-3 col-6">
+                                <label for="exampleFormControlInput1" class="form-label">Last Name</label>
+                                <input type="text" class="form-control shadow-none" id="chatLastname" placeholder="Your last name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Text</label>
+                                <textarea class="form-control shadow-none" id="chatText" rows="3"></textarea>
+                            </div>
+                            <div class="col text-center">
+                                <button id="chatButton" class="btn btn-dark rounded-pill px-3 py-2 btn-dark-hover">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <br><br>
+    <div class="copyright text-center p-2 text-white bg-footer mt-5">
+        <p class="mb-0">© Copyright <strong><span>Webland</span></strong>. All Rights Reserved</p>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script src="./assets/vendor/aos/aos.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script>
+        // hide and show menu
+        const hideSection = [
+            about = "show",
+            portfolio = "show",
+            testimonial = "hide",
+            blogs = "hide",
+            contact = "show",
+        ];
+        // section about
+        hideSection[0] == 'hide' ? document.getElementById("about").classList.add('d-none') : document.getElementById("about").classList.remove('d-none')
+        hideSection[0] == 'hide' ? document.getElementById("sidebarabout").classList.add('d-none') : document.getElementById("sidebarabout").classList.remove('d-none')
+            // section portfolio
+        hideSection[1] == 'hide' ? document.getElementById("portfolio").classList.add('d-none') : document.getElementById("portfolio").classList.remove('d-none')
+        hideSection[1] == 'hide' ? document.getElementById("sidebarportfolio").classList.add('d-none') : document.getElementById("sidebarportfolio").classList.remove('d-none')
+            // section testimonial
+        hideSection[2] == 'hide' ? document.getElementById("testimonial").classList.add('d-none') : document.getElementById("testimonial").classList.remove('d-none')
+        hideSection[2] == 'hide' ? document.getElementById("sidebartestimonial").classList.add('d-none') : document.getElementById("sidebartestimonial").classList.remove('d-none')
+            // section blogs
+        hideSection[3] == 'hide' ? document.getElementById("blogs").classList.add('d-none') : document.getElementById("blogs").classList.remove('d-none')
+        hideSection[3] == 'hide' ? document.getElementById("sidebarblogs").classList.add('d-none') : document.getElementById("sidebarblogs").classList.remove('d-none')
+            // section contact
+        hideSection[4] == 'hide' ? document.getElementById("contact").classList.add('d-none') : document.getElementById("contact").classList.remove('d-none')
+        hideSection[4] == 'hide' ? document.getElementById("sidebarcontact").classList.add('d-none') : document.getElementById("sidebarcontact").classList.remove('d-none')
+
+        // Blog Menu
+        const blogSection = [{
+            "id": 1,
+            "image": "besok/senin",
+            "title": "Cara Menangani Kosa Kata",
+            "text": "Besok Adalah hari minggu"
+        }, {
+            "id": 2,
+            "image": "besok/senin",
+            "title": "Cara Menangani Kosa Mana",
+            "text": "Besok Adalah hari minggu"
+        }, {
+            "id": 3,
+            "image": "besok/senin",
+            "title": "Cara Menangani Kosa Biru",
+            "text": "Besok Adalah hari minggu"
+        }, ]
+        console.log(blogSection.length)
+
+
+        // chat to whatsapp
+        document.getElementById("chatButton").addEventListener("click", () => {
+            const chatNumber = 6285700285472 //nomor pakai format 62, contoh : 62817678888
+            const chatName = document.getElementById("chatFirstname").value + " " + document.getElementById("chatLastname").value
+            const chatText = document.getElementById("chatText").value
+            window.open(
+                `https://wa.me/${chatNumber}?text=Halo,%20Nama%20Saya%20${chatName+'%0A'+encodeURI(chatText)}`,
+                '_blank' // <- This is what makes it open in a new window.
+            );
+        })
+    </script>
+</body>
+
+</html>
