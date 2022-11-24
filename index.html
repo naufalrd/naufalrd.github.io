@@ -191,7 +191,7 @@
                                 <!-- gallery item start -->
                                 <div class="gallery-item website">
                                     <a class="text-decoration-none">
-                                        <div class="gallery-item-inner img-content position-relative" style="height:20vw">
+                                        <div class="gallery-item-inner img-content position-relative changeHeight">
                                             <span class="position-absolute vertical-center fas fs-1 text-dark bg-white p-3 fa-search"></span>
                                             <img src="./assets/img/upload/jogloquran.png" alt="website">
                                         </div>
@@ -201,7 +201,7 @@
                                 <!-- gallery item start -->
                                 <div class="gallery-item mini_project">
                                     <a href="mini_project/login_register/index.html" target="_blank" class="text-decoration-none">
-                                        <div class="gallery-item-inner img-content position-relative">
+                                        <div class="gallery-item-inner img-content position-relative changeHeight">
                                             <span class="position-absolute vertical-center fas fs-1 text-dark bg-white p-3 fa-search"></span>
                                             <img src="./assets/img/mini_project/login_register.png" alt="mini_project">
                                         </div>
@@ -211,7 +211,7 @@
                                 <!-- gallery item start -->
                                 <div class="gallery-item mini_project">
                                     <a href="mini_project/travelpage/index.html" target="_blank" class="text-decoration-none">
-                                        <div class="gallery-item-inner img-content position-relative">
+                                        <div class="gallery-item-inner img-content position-relative changeHeight">
                                             <span class="position-absolute vertical-center fas fs-1 text-dark bg-white p-3 fa-search"></span>
                                             <img src="./assets/img/mini_project/travel_page.png" alt="mini_project">
                                         </div>
@@ -455,6 +455,20 @@
                 '_blank' // <- This is what makes it open in a new window.
             );
         })
+        
+        var el = document.querySelectorAll('.changeHeight');
+        for (var i = 0; i < el.length; i++) {
+            let height = el[i].offsetWidth * 0.6 + 'px'
+            el[i].style.height = height;
+        }
+        window.addEventListener('resize', () => {
+            var el = document.querySelectorAll('.changeHeight');
+            for (var i = 0; i < el.length; i++) {
+                // el[i].style.height = el[i].offsetWidth * 0.5 
+                let height = el[i].offsetWidth * 0.6 + 'px'
+                el[i].style.height = height;
+            }
+        });
     </script>
 </body>
 
